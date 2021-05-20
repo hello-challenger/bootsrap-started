@@ -1,0 +1,47 @@
+create folder exemple "bootstrap-site"
+open terminal
+$ code .
+open terminal vs code
+npm --version
+npm init -y
+npm i bootstrap@5.0.1
+npm i bootstrap-icons
+install plugins vs code "Live Sass Compiler"
+install plugins vs code "Bootstrap 5 & Font Awesome Snippets"
+create global file "index.html"
+emmet > !b5-$
+create folder global "sass"
+create file sass/style.scss "style.scss"
+create line 1 in style.scss "@import './node_modules/bootstrap/scss/bootstrap.scss'; "
+parramettrer setting json plugins live server
+//_________ css standard
+    // Live sass compiler .json
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+//_________ OR css compressed
+	// Live sass compiler .json
+    	{
+      	"format": "compressed",
+      	"extensionName": ".css",
+      	"savePath": "/css"
+    }
+//_________ end
+
+start Live Server Compiler "Watch Sass"
+link css to html > <link rel="stylesheet" href="/css/style.css">
+test compiler
+add line in style.scss
+//_________
+$theme-colorbg: rgb(201, 235, 12);
+
+body {
+  background-color: $theme-bg;
+}
+//________
+
+
+
+
